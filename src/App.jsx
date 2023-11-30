@@ -7,10 +7,9 @@ const App = () => {
   const [activeId, setActiveId] = useState(false)
 
   const toggleQuestion = (id) => {
+    // This function will make it possible for use to close the article after reading
     const newActiveId = id === activeId ? null : id
     setActiveId(newActiveId)
-    //in the question is already open, lets write a code to close it
-    // console.log(id)
   }
   return (
     <main>
