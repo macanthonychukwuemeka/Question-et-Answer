@@ -1,16 +1,16 @@
-import { useState } from "react"
-import data from "./data"
-import Questions from "./Questions"
+import { useState } from "react";
+import data from "./data";
+import Questions from "./Questions";
 
 const App = () => {
-  const [questions, setQuestions] = useState(data)
-  const [activeId, setActiveId] = useState(false)
+  const [questions, setQuestions] = useState(data);
+  const [activeId, setActiveId] = useState(false);
 
   const toggleQuestion = (id) => {
-    // This function will make it possible for use to close the article after reading
-    const newActiveId = id === activeId ? null : id
-    setActiveId(newActiveId)
-  }
+    // This function will make it possible for us to close the article after reading
+    const newActiveId = id === activeId ? null : id;
+    setActiveId(newActiveId);
+  };
   return (
     <main>
       <Questions
@@ -19,6 +19,6 @@ const App = () => {
         toggleQuestion={toggleQuestion}
       />
     </main>
-  )
-}
-export default App
+  );
+};
+export default App;
