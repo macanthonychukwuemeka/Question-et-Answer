@@ -8,6 +8,7 @@ const App = () => {
 
   const toggleQuestion = (id) => {
     // This function will make it possible for us to close the article after reading
+    // This function will make it possible for us to close the article after reading
     const newActiveId = id === activeId ? null : id;
     setActiveId(newActiveId);
   };
